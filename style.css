@@ -1,0 +1,209 @@
+html, body {
+    height: 100%; 
+    margin: 0; 
+    padding: 0; 
+  }
+  
+  body {
+    background-image: url('background.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-color: black;
+    color: white; /* Definir a cor do texto como branca para contraste */
+  }
+  
+  .w3-top {
+    position: relative; 
+  }
+  
+  .w3-bar {
+    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
+    color: white; /* Garante que o texto seja branco */
+    position: relative;
+  }
+  
+  .w3-bar-item {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px; /* Ajuste de espaço ao redor do texto */
+    color: white; /* Cor do texto */
+  }
+  
+  .w3-bar-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFD700; /* Cor de fundo amarelo para o efeito */
+    z-index: -1;
+    transition: width 0.5s ease-in-out;
+    width: 0; /* Começa com largura 0 para esconder o fundo */
+  }
+  
+  .w3-bar-item:hover::before {
+    width: 100%; /* Expande o fundo ao passar o mouse */
+  }
+  
+  .wuevertxn-font {
+    font-family: 'Lora', serif;
+    font-size: 24px; /* Fonte padrão para a navegação */
+    font-weight: 700;
+    color: white; /* Cor do texto */
+    display: inline-block;
+  }
+  
+  .wuevertxn-font::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(192, 192, 192); /* Cor do fundo */
+    z-index: -1;
+    transition: width 0.5s ease-in-out;
+    width: 0; /* Começa com largura 0 para esconder o fundo */
+  }
+  
+  .wuevertxn-font:hover::before {
+    width: 100%; /* Expande o fundo ao passar o mouse */
+  }
+  
+  .wuevertxn-font u.highlight {
+    color: #FFD700; /* Amarelo Ouro para o W e X */
+  }
+  
+  .subtext {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 20px; 
+    color: white;
+    margin-top: 10px;
+  }
+  
+  
+  .centered-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .wuevertxn-central {
+    font-family: 'Bodoni Moda SC', serif;
+    font-size: 96px; /* Fonte grande para o texto central */
+    font-weight: 700;
+    color: white; /* Cor do texto */
+    display: inline-block;
+    padding: 10px 20px; 
+    position: relative;
+    letter-spacing: -12px; 
+}
+
+  
+  .wuevertxn-central::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(192, 192, 192); /* Cor do fundo */
+    z-index: -1;
+    transition: width 0.5s ease-in-out;
+    width: 0; /* Começa com largura 0 para esconder o fundo */
+  }
+  
+  .wuevertxn-central:hover::before {
+    width: 100%; /* Expande o fundo ao passar o mouse */
+  }
+  
+  .wuevertxn-central u.highlight {
+    color: #FFD700; /* Ouro para o W e X */
+  }
+  
+  .links-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaço entre as caixas */
+    margin-top: 20px; /* Espaço acima das caixas */
+  }
+  
+  .link-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px; /* Largura das caixas */
+    height: 50px; /* Altura das caixas */
+    border: 2px solid #FFD700; /* Borda amarela */
+    color: #FFD700; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .link-box:hover {
+    background-color: #FFD700; /* Cor de fundo ao passar o mouse */
+    color: black; /* Cor do texto ao passar o mouse */
+  }
+
+      /* Centralizar o card */
+      .centered-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px; 
+      }
+      
+      /* Faz com que o card não fique muito grande */
+      .w3-card-4 {
+        width: 100%;
+        max-width: 900px; 
+      }
+
+      .mySlides {
+        display: none;
+      }
+      .mySlides:first-child {
+        display: block;
+      }
+
+      .w3-container.w3-yellow {
+        font-family: 'Bodoni Moda SC', serif;
+    }
+    /*cortou o card*/
+    .w3-card-4 header {
+      font-family: 'Lora', serif;
+      font-size: 24px; /* Fonte padrão para a navegação */
+      font-weight: 700;
+      color: rgb(255, 0, 0); /* Cor do texto */
+      display: inline-block;
+  }
+
+  .w3-container w3-yellow{
+    font-family: 'Lora', serif;
+    font-size: 24px; 
+  }
+  
+  h1{
+    font-family: 'Lora', serif;
+    font-size: 24px;
+
+  }
+
+  h3{
+    font-family: 'Lora', serif;
+    font-size: 18px;
+
+  }
+
+  .w3-xlarge.w3-display-bottomleft.w3-padding{
+    font-family: 'Lora', serif;
+    font-size: 18px;
+  }
+  
